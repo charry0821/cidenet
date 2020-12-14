@@ -35,4 +35,25 @@ class Empleado extends Model
     protected $hidden = [
         'updated_at', 'created_at',
     ];
+
+    /**
+     * Obtiene el pais al que esta asociado el empleado
+     */
+    public function pais() {
+        return $this->hasOne(Pais::class, 'id', 'pais_id');
+    }
+
+    /**
+     * Obtiene el área al que esta asociado el empleado
+     */
+    public function area() {
+        return $this->hasOne(Area::class, 'id', 'area_id');
+    }
+
+    /**
+     * Obtiene el tipo de identificación que posee el empleado
+     */
+    public function tipoIdentificacion() {
+        return $this->hasOne(TipoIdentificacion::class, 'id', 'tipo_identificacion_id');
+    }
 }

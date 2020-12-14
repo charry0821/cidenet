@@ -178,6 +178,10 @@ return [
          * Provider para datatables
          */
         Yajra\DataTables\DataTablesServiceProvider::class,
+        /**
+         * Provider para collectivos de HTML y FORM
+         */
+        Collective\Html\HtmlServiceProvider::class,
 
     ],
 
@@ -234,6 +238,11 @@ return [
          * Alias para datatables
          */
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+        /** 
+         * Alias para collectivos de HTML y FORM
+         */
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 

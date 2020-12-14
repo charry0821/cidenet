@@ -21,7 +21,7 @@ class PaisSeeder extends Seeder
         ]);
 
         Pais::create([
-        	'nombre' => 'Servicios Varios',
+        	'nombre' => 'Estados Unidos',
         	'abreviacion' => 'US',
         	'dominio' => 'cidenet.com.us'
         ]);
